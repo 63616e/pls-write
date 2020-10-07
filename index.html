@@ -1,47 +1,45 @@
-<html><head> 
-  <title>My text editor</title>
+<head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-  <!-- some minimal design (not necessary)-->
+  <title>write-pls</title>
   <style type="text/css">
     body{
       text-align: left;
-      margin: 10;
-      font-family: Verdana, Arial, sans-serif;
+      margin: 5px;
+      font-family: Consolas, Helvetica, sans-serif, sans-serif;
       font-size: 16px;
+      padding: 0.5cm;
     }
   </style>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hello, world!</title>
+</head>
+
+
 </head>
 <body>
-
-  <!-- heading -->
-  <h2>Text editor with auto-save</h2>
+  
+ <center> <h2>type here.</h2> </center>
  
   
-  <div id="editor" contenteditable="true" style="height: 100%; width: 70%; border: solid; border-width: 1px; padding 15px;"></div>
+  <div id="editor" contenteditable="true" style="height: 100%; width: 100%; padding 15px;"></div>
  
   
   <script>
 
-    // If there's anything in the storage
     if (localStorage.getItem('text_in_editor') !== null) {
  
-        // ...then show it
         document.getElementById('editor').innerHTML = localStorage.getItem('text_in_editor');
       }
 
-    // listen to key presses
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function(x) {
 
-      // once a key is pressed, save whatever's in our box to localstorage
       localStorage.setItem('text_in_editor', document.getElementById('editor').innerHTML);
     });
   </script>
  
+</body>
 
-<!-- That's all folks -->
-
-</body></html>
+</html>
