@@ -15,8 +15,3 @@ not really any reason to clone this project, since it is reachable [here](https:
 if you really find it necessary, clone this project. 
 no setup. open it on your browser. 
 voila. 
-
-
-
-## TO-DO
--[ ] add fonts. 
